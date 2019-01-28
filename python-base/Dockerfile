@@ -43,4 +43,4 @@ WORKDIR /home/safeuser/Electron-Cash-SLP-3.4.3
 
 # Install python dependencies.
 # Expect it to fail.
-RUN sudo python3 setup.py install || 1
+RUN sudo python3 setup.py install || echo "done"
