@@ -38,11 +38,12 @@ RUN sudo chown safeuser /home/safeuser/.electron-cash/config
 RUN mkdir /home/safeuser/.electron-cash/wallets
 COPY default_wallet /home/safeuser/.electron-cash/wallets/default_wallet
 
+COPY dummyapp.js dummyapp.js
+
 # Expose the port defined in the config file.
 EXPOSE 5111
 
 COPY launch-electron.sh launch-electron.sh
 CMD ["./launch-electron.sh"]
 
-#COPY dummyapp.js dummyapp.js
 #CMD ["node", "dummyapp.js"]
