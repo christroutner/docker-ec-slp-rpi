@@ -19,17 +19,17 @@ RUN adduser safeuser sudo
 #Set password to 'abcd8765' change value below if you want a different password
 RUN echo safeuser:abcd8765 | chpasswd
 
-# Log in as the application user
-USER safeuser
-# supply password for sudo commands
-RUN echo 'abcd8765' | sudo -S pwd
-WORKDIR /home/safeuser
-
 #Setup NPM for non-root global install (like on a mac)
 RUN mkdir /home/safeuser/.npm-global
 RUN chown -R safeuser .npm-global
 RUN echo "export PATH=~/.npm-global/bin:$PATH" >> /home/safeuser/.profile
 RUN runuser -l safeuser -c "npm config set prefix '~/.npm-global'"
+
+# Log in as the application user
+USER safeuser
+# supply password for sudo commands
+RUN echo 'abcd8765' | sudo -S pwd
+WORKDIR /home/safeuser
 
 COPY dummyapp.js dummyapp.js
 
