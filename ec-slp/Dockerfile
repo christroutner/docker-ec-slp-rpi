@@ -21,6 +21,11 @@ RUN sudo pip3 install protobuf
 RUN sudo pip3 install jsonrpc
 RUN sudo pip3 install jsonrpclib
 RUN sudo pip3 install jsonrpclib-pelix
+RUN sudo pip3 install pyaes
+RUN sudo pip3 install ecdsa
+RUN sudo pip3 install urllib3
+RUN sudo pip3 install chardet
+RUN sudo pip3 install certifi
 
 # Copy config files.
 RUN mkdir /home/safeuser/.electron-cash
@@ -32,8 +37,8 @@ COPY default_wallet /home/safeuser/.electron-cash/wallets/default_wallet
 # Expose the port defined in the config file.
 EXPOSE 5111
 
+COPY launch-electron.sh launch-electron.sh
+#CMD ["./launch-electron.sh"]
+
 COPY dummyapp.js dummyapp.js
 CMD ["node", "dummyapp.js"]
-
-#COPY launch-electron.sh launch-electron.sh
-#CMD ["./launch-electron.sh"]

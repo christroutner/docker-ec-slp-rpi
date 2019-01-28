@@ -4,6 +4,10 @@ This repository contains Docker container code for running the
 a Raspberry Pi. Furthermore, the software is run in daemon mode so the RPi can
 be used as a stand-alone server for validating SLP transactions over JSON RPC.
 
+There are a lot of moving targets with this software. Electron Cash is constantly
+changing, SLP protocol is changing, Python and associated libraries are also
+constantly changing. Things break. No guarantee this repo will work.
+
 # Installation and Usage
 It's assumed that you are starting with a fresh installation of Raspbian on
 a Raspberry Pi B+ v3.
