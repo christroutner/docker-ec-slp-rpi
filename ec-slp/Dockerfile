@@ -8,6 +8,9 @@ USER safeuser
 RUN echo 'abcd8765' | sudo -S pwd
 WORKDIR /home/safeuser
 
+# Used to give Docker something to chew on, so it doesn't exit.
+COPY dummyapp.js dummyapp.js
+
 # Get the SLP fork for Electron cash
 RUN wget https://github.com/simpleledger/Electron-Cash-SLP/archive/3.4.3.tar.gz
 RUN tar -xvf 3.4.3.tar.gz
@@ -37,8 +40,6 @@ COPY config /home/safeuser/.electron-cash/config
 RUN sudo chown safeuser /home/safeuser/.electron-cash/config
 RUN mkdir /home/safeuser/.electron-cash/wallets
 COPY default_wallet /home/safeuser/.electron-cash/wallets/default_wallet
-
-COPY dummyapp.js dummyapp.js
 
 # Expose the port defined in the config file.
 EXPOSE 5111
