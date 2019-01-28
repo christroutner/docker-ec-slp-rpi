@@ -29,6 +29,9 @@ SLP transactions:
 
 `curl --data-binary '{"jsonrpc": "2.0", "id":"testing", "method": "slpvalidate", "params": ["2504b5b6a6ec42b040a71abce1acd71592f7e2a3e33ffa9c415f91a6b76deb45", false, false] }' -H 'content-type: text/plain;' http://localhost:5111`
 
+The first call will fail, but calls should return:
+`{"result": "Valid", "id": "testing", "jsonrpc": "2.0"}`
+
 ## License
 
 MIT © Chris Troutner
