@@ -18,7 +18,6 @@ RUN sudo apt install -y python3-pyqt5 python3-socks
 RUN sudo pip3 install dnspython
 RUN sudo pip3 install google-api-python-client
 RUN sudo pip3 install protobuf
-RUN sudo pip3 install xmlrpc
 RUN sudo pip3 install jsonrpc
 RUN sudo pip3 install jsonrpclib
 RUN sudo pip3 install jsonrpclib-pelix
