@@ -31,8 +31,6 @@ USER safeuser
 RUN echo 'abcd8765' | sudo -S pwd
 WORKDIR /home/safeuser
 
-COPY dummyapp.js dummyapp.js
-
 # Install python tools
 RUN sudo apt-get install -y python3-pip python3-setuptools
 

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t christroutner/ec-slp .
+docker build -t ec-slp .
