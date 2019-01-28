@@ -1,0 +1,43 @@
+{
+    "addresses": {
+        "change": [
+            "1E7HUCESjfVrLXmCw2uqoncttyHuArFeyw",
+            "1DCRqVoj5bZEGhfp1ekticVuwRCPwNuf8W",
+            "19jkP9atea9Yx5Kr69SoHWD1kYneunptgi",
+            "1FAAs2oeRiBNxwWYXsAVKA3cFiJb7VscVm",
+            "1PRMof4juDBTiVWg4XeZsJKgbecBYV8aUz",
+            "1NxSaVR6CJo4ZDu6eHwztNM4evoAEckeKd"
+        ],
+        "receiving": [
+            "1NEZdToW1hijj4zH52fJq9fvFVvV1JFkUW",
+            "1EYqDwNVUA4gJyE1Y8ht6h1vfpggXZHJQe",
+            "1N2Gcd6Tg7w5iwnTkHjzFYXqtNiHYUckkY",
+            "1CSiHPvnkovTu99qvCta79Vor3w6roUeei",
+            "1Hb6rMGaSa9LLqGcLYFL3eBgHEpNTuCSfo",
+            "1LeYy3vpp1xehqTJvePXjVFy4jVJHsRHDy",
+            "136tmzo9TuqbezhShiUbiXALZrTrL7DadP",
+            "1KY2xVgs7Ee2Nqse2wn7K62dQLrrK8PvVc",
+            "1oBCg6dHHHF4nBnwrtcKYUt5L9TVemXe4",
+            "1BKVouoNwrMSBEChAFmsw4b5WjCdPZNehZ",
+            "1J9fB2KH2xJ3C6FH9PkE6SrnMgaKuo5W3g",
+            "1QAYYmyrT26T1PVbkat3jywHUxoSAG4oz7",
+            "16to5cYY7TvzHgYMs99kCeato4FCeCHFfF",
+            "1AVfSB84ePrV7qF46hdaBhRB7LdecfQHTY",
+            "1PzAuwTnjjLCEVrWqjNZzuDKDXzehAwwuc",
+            "13ahZRwHAb96CFEjBu1dTZUY53sAAwDKxZ",
+            "1Ee475UYP5W5bkcL5gXkoSG3pBNq4wVN6H",
+            "1HNRNgFdPKqBBvt6kLiBvNSySo7KG2pZbR",
+            "188QLo3AzrYvSZZEecbJnHNC1JEdaWkPSM",
+            "1Mg3CJ68m6hEHxtk1Rxn1Gwzycqf57ZrHq"
+        ]
+    },
+    "keystore": {
+        "seed": "retire toy discover chaos surface trumpet rich unit spike ginger vast come",
+        "type": "bip32",
+        "xprv": "xprv9xxtvqvNW5ygXYGe8jPHEShm1zpvoXvu4LxnamRUq65N4TDKYZBNbyFiXgTiu5dxKYBa1sKfbBr34LEyWsbDS9B4dYnq7HBeaUH78jMrrFW",
+        "xpub": "xpub6BxFLMTGLTXyk2M7EkvHbaeVa2fRCzekRZtPP9q6PRcLwFYU66Vd9maCNxQMbrEfko82Em3yFfTeWmWBsTTjUrBQ5Wjcpdo129N3CbtQKHz"
+    },
+    "seed_version": 17,
+    "use_encryption": false,
+    "wallet_type": "standard"
+}
