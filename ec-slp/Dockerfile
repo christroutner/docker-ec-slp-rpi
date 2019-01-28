@@ -42,7 +42,7 @@ COPY default_wallet /home/safeuser/.electron-cash/wallets/default_wallet
 EXPOSE 5111
 
 COPY launch-electron.sh launch-electron.sh
-#CMD ["./launch-electron.sh"]
+CMD ["./launch-electron.sh"]
 
-COPY dummyapp.js dummyapp.js
-CMD ["node", "dummyapp.js"]
+#COPY dummyapp.js dummyapp.js
+#CMD ["node", "dummyapp.js"]
