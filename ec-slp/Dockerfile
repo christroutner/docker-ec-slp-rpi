@@ -13,10 +13,7 @@ USER safeuser
 RUN echo 'abcd8765' | sudo -S pwd
 WORKDIR /home/safeuser
 
-# Install python dependencies.
-#RUN sudo pip3 install -I pyqt5-sip
-RUN apt install python3-pyqt5
-RUN sudo python3 setup.py install
+# Install other required libraries
 
 # Copy config files.
 RUN mkdir /home/safeuser/.electron-cash
@@ -28,8 +25,8 @@ COPY default_wallet /home/safeuser/.electron-cash/wallets/default_wallet
 # Expose the port defined in the config file.
 EXPOSE 5111
 
-#COPY dummyapp.js dummyapp.js
-#CMD ["node", "dummyapp.js"]
+COPY dummyapp.js dummyapp.js
+CMD ["node", "dummyapp.js"]
 
 #COPY launch-electron.sh launch-electron.sh
 #CMD ["./launch-electron.sh"]
