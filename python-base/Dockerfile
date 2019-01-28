@@ -33,7 +33,3 @@ WORKDIR /home/safeuser
 
 # Install python tools
 RUN sudo apt-get install -y python3-pip python3-setuptools
-
-# Install python dependencies.
-# Expect it to fail.
-RUN sudo python3 setup.py install || echo "done"
